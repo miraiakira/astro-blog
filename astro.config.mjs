@@ -1,12 +1,17 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
+import vercel from '@astrojs/vercel/serverless';
+import glsl from 'vite-plugin-glsl';
 
-import vercel from "@astrojs/vercel/serverless";
+import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx()],
+  integrations: [tailwind(), mdx(), vue()],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel(),
+  vite: {
+    plugins: [glsl()],
+  },
 });
