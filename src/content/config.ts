@@ -6,6 +6,7 @@ const postCollection = defineCollection({
     author: z.string(),
     date: z.string(),
     image: image(),
+    featured: z.boolean(),
     title: z.string(),
   }),
 })

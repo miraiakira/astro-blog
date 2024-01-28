@@ -22,7 +22,6 @@ outside.material = new ShaderMaterial({
   vertexShader,
   fragmentShader,
 })
-console.log(outside)
 </script>
 <template>
   <primitive :object="model" />

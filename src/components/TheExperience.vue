@@ -36,7 +36,8 @@ const gl = {
 <style>
 .tres-container {
   width: 100%;
-  height: 400px;
+  height: 100%;
+  flex: 1;
 }
 
 canvas {

@@ -9,9 +9,11 @@ export const prerender = true;
 
 <Layout title="XDong's Blog">
   <TheExperience client:load />
-  <Main>
-    <H1 text="XDong's Blog" />
-  </Main>
 </Layout>
 
-<style></style>
+<style is:global>
+  html,
+  body {
+    height: 100%;
+  }
+</style>
